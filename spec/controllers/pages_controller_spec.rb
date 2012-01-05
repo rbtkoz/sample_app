@@ -43,4 +43,11 @@ describe PagesController do
                           "Ruby on Rails Tutorial Sample App | About")
     end
   end
+  
+  describe "Get 'help'" do
+    it "should be successful" do
+      get 'help'
+      response.should be_success
+    end
+end
 end
